@@ -1,5 +1,10 @@
+import numpy as np
+import pandas as pd
+import plotly.graph_objects as go
+import plotly.express as px
+import plotly.graph_objects as go
 import plotly.figure_factory as ff
-import dash
+from dash import Dash 
 from jupyter_dash import JupyterDash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -115,7 +120,8 @@ p6MultBoxfig.update_layout(showlegend=False)
 bar_columns = ['satjob', 'relationship', 'male_breadwinner', 'men_bettersuited', 'child_suffer', 'men_overwork']
 group_columns = ['sex', 'region', 'education']
 
-app2 = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app2 = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 colors = {
     'background': '#999999',
