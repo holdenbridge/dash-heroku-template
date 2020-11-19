@@ -121,7 +121,7 @@ bar_columns = ['satjob', 'relationship', 'male_breadwinner', 'men_bettersuited',
 group_columns = ['sex', 'region', 'education']
 
 app2 = Dash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
+server = app2.server
 
 colors = {
     'background': '#999999',
