@@ -227,4 +227,4 @@ def make_figure(x, y):
 
 
 if __name__ == '__main__':
-    app2.run_server(debug=True)
+    app2.run_server(debug=False)
